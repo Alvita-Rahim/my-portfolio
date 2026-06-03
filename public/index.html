@@ -1,93 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvita Rahim Portfolio</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            background-color:#f5f5f5;
-        }
-
-        nav{
-            background:#222;
-            color:white;
-            padding:20px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
-
-        nav ul{
-            display:flex;
-            list-style:none;
-            gap:20px;
-        }
-
-        nav a{
-            text-decoration:none;
-            color:white;
-        }
-
-        .hero{
-            text-align:center;
-            padding:100px 20px;
-            background:white;
-        }
-
-        .hero h1{
-            font-size:50px;
-            margin-bottom:10px;
-        }
-
-        .hero p{
-            font-size:20px;
-            color:gray;
-        }
-
-        .section{
-            padding:50px 20px;
-            text-align:center;
-        }
-
-        .skills{
-            display:flex;
-            justify-content:center;
-            gap:15px;
-            flex-wrap:wrap;
-            margin-top:20px;
-        }
-
-        .skill-box{
-            background:#222;
-            color:white;
-            padding:12px 20px;
-            border-radius:8px;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <nav>
         <h2>Alvita Rahim</h2>
-
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -95,41 +20,126 @@
 
     <section class="hero">
         <h1>Hello, I'm Alvita Rahim</h1>
-        <p>3rd Year BTech Student interested in AI/ML and Data Science</p>
+        <p>3rd Year BTech Student | AI/ML & Data Science Enthusiast</p>
     </section>
 
-    <section class="section" id="about">
+    <section class="section scroll-reveal" id="about">
         <h2>About Me</h2>
-        <br>
-        <p>
-            I am a 3rd-year BTech student passionate about
-            Artificial Intelligence, Machine Learning, and Data Science.
-            I enjoy learning new technologies and building projects.
-        </p>
-    </section>
-
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-
-        <div class="skills">
-            <div class="skill-box">C</div>
-            <div class="skill-box">Python</div>
-            <div class="skill-box">R Programming</div>
-            <div class="skill-box">Git</div>
-            <div class="skill-box">HTML</div>
+        <div class="card">
+            <p>
+                I am a 3rd-year BTech student specializing in Artificial Intelligence, Machine Learning, and Data Science. 
+                I bridge the gap between complex algorithmic data modeling and real-world software deployments. Driven by curiosity and a problem-solving mindset, 
+                I focus on architecting intelligent automation solutions, analyzing large-scale datasets, and engineering data pipelines that turn raw data into strategic insights.
+            </p>
         </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section" id="projects">
+        <h2 class="section-title">Things I've <span class="outline-text">built.</span></h2>
+        
+        <div class="project-grid">
+            
+            <div class="project-card scroll-reveal">
+                <div>
+                    <div class="project-meta">01 — TEAM PROJECT</div>
+                    <h3 class="project-name">Intelligent Recipe Assistant</h3>
+                    <p class="project-desc">
+                        A web-based application designed to streamline meal-planning and prevent unsafe dietary choices by automating real-time ingredient detection and custom recipe generation. Built an image classification pipeline using EfficientNet-B3 with an added Squeeze-and-Excitation attention mechanism to recognize multi-ingredients automatically.
+                    </p>
+                </div>
+                <div>
+                    <div class="project-capsules">
+                        <span class="capsule cyan">EFFICIENTNET-B3</span>
+                        <span>RANDOM FOREST</span>
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Alvita-Rahim" target="_blank" rel="noopener noreferrer" class="btn">View Code <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card scroll-reveal">
+                <div>
+                    <div class="project-meta">02 — DATA ANALYTICS</div>
+                    <h3 class="project-name">Amazon E-Commerce Analytics</h3>
+                    <p class="project-desc">
+                        Engineered an end-to-end data processing and analytics dashboard to transform raw Amazon datasets into commercial insights. Designed user-centric, interactive report layouts featuring KPIs for tracking revenue trends, profit margins, and order fulfillment metrics.
+                    </p>
+                </div>
+                <div>
+                    <div class="project-capsules">
+                        <span class="capsule purple">POWER BI</span>
+                        <span>DAX</span>
+                        <span>ETL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Dashboard <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card scroll-reveal">
+                <div>
+                    <div class="project-meta">03 — WEB DEV</div>
+                    <h3 class="project-name">This Portfolio Website</h3>
+                    <p class="project-desc">
+                        Designed and built this responsive single-page web environment from scratch to highlight personal engineering work and data pipelines. Integrated structural semantic layouts, glassmorphic card designs, and sleek dark mode styles to showcase personal data workflows.
+                    </p>
+                </div>
+                <div>
+                    <div class="project-capsules">
+                        <span class="capsule green">HTML5</span>
+                        <span>CSS3</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section scroll-reveal" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-box">Machine Learning</div>
+            <div class="skill-box">Power BI</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">R Programming</div>
+            <div class="skill-box">C</div>
+            <div class="skill-box">Git & GitHub</div>
+            <div class="skill-box">HTML5</div>
+            <div class="skill-box">CSS3</div>
+        </div>
+    </section>
+
+    <section class="section scroll-reveal" id="contact">
         <h2>Contact</h2>
-        <br>
-        <p>Email: alvitarahm@gmail.com</p>
-        <p>GitHub: Alvita-Rahim</p>
+        <div class="card">
+            <p>Email: <a href="mailto:alvitarahm@gmail.com">alvitarahm@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Alvita-Rahim" target="_blank" rel="noopener noreferrer">github.com/Alvita-Rahim</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/alvita-rahim-a10b17290" target="_blank" rel="noopener noreferrer">linkedin.com/in/alvita-rahim</a></p>
+        </div>
     </section>
 
     <footer>
         <p>© 2026 Alvita Rahim | Portfolio</p>
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+    </script>
 
 </body>
 </html>
